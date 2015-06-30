@@ -1,0 +1,25 @@
+  <h1>Songs</h1>
+
+  <form action='/songs/<%=@song.id%>' method="POST">
+
+    <input type="hidden" name="_method" value="PATCH">
+
+    <label>Title:</label>
+    <input type="text" name="song[title]" value="<%=@song.title%>">
+
+    <label>Artist:</label>
+    <input type="text" name="song[artist]" value="<%=@song.artist%>">
+
+    <label>Album:</label>
+    <input type="text" name="song[album]" value="<%=@song.album%>">
+
+    <label>Genre:</label>
+    <input type="text" name="song[genre]" value="<%=@song.genre%>">
+
+    <label>Length:</label>
+    <input type="text" name="song[length]" value="<%=@song.length%>">
+
+    <input type="submit" value="Save Changes">
+
+  </form>
+
